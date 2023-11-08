@@ -1,0 +1,13 @@
+
+version: 2
+
+models:
+  - name: diamonds_average_price_by_cut
+    columns:
+      - name: cut
+        tests:
+          - unique
+          - not_null
+      - name: average_price
+        tests:
+          - not_null

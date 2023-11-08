@@ -1,0 +1,14 @@
+
+name: 'databricks_dbt_test'
+version: '1.0'
+config-version: 2
+
+profile: 'default'
+
+source-paths: ["models"]
+target-path: "target"
+clean-targets: ["target"]
+
+models:
+  databricks_dbt_test:
+    +materialized: view
